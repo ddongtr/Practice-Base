@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, Button, TouchableOpacity, Text} from 'react-native';
+import {Button, View} from 'react-native';
 import {commonStyles} from '../../common/commonStyles';
 import {reset} from '../../routes/root-navigation';
 
@@ -12,9 +12,6 @@ const SignInScreen = (props: any) => {
           reset();
         }}
       />
-      <TouchableOpacity>
-        <Text>asjldhakshdas</Text>
-      </TouchableOpacity>
     </View>
   );
 };
