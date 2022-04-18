@@ -3,6 +3,7 @@ package com.practice;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
 
@@ -23,6 +24,14 @@ public class MainActivity extends ReactActivity {
   protected ReactActivityDelegate createReactActivityDelegate() {
     return new MainActivityDelegate(this, getMainComponentName());
   }
+
+/**
+* Addition configure of react navigation.
+*/
+  @Override
+protected void onCreate(Bundle savedInstanceState) {
+  super.onCreate(null);
+}
 
   public static class MainActivityDelegate extends ReactActivityDelegate {
     public MainActivityDelegate(ReactActivity activity, String mainComponentName) {
